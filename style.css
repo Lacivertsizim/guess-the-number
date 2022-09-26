@@ -1,0 +1,24 @@
+#top-div{
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 10px; 
+}
+#middle-div{
+    text-align: right;
+}
+#middle-div p{
+    color: green;
+    font-size: 1rem;
+}
+
+/* ortalamak için flexi kullandım */
+#input-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#input-div input{
+    font-size: 2rem;
+    width: 100px;
+}
