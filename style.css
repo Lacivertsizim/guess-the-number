@@ -1,14 +1,28 @@
+body {
+    background-image: url(foto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+}
 #top-div{
     text-align: center;
     border: 2px solid gray;
     border-radius: 10px; 
+    width: 300px;
+    height: 200px;
+    margin: 20px 560px;
+    background-color: rgb(227, 187, 134);
+    padding-top: 65px;
 }
 #middle-div{
     text-align: right;
 }
 #middle-div p{
-    color: green;
+    color: chocolate;
     font-size: 1rem;
+    margin-right: 629px;
 }
 
 /* ortalamak için flexi kullandım */
@@ -20,5 +34,28 @@
 
 #input-div input{
     font-size: 2rem;
-    width: 100px;
+    width: 150px;
+    border-radius: 5px;
 }
+#check-btn:hover {
+    background-color: rgb(190, 185, 185);
+}
+#check-btn{
+    width: 100px;
+    border-radius: 5px;
+}
+h2 {
+    font-family: cursive;
+    font-size: 32px;
+}
+#photo {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+#last-div{
+    font-size: 2rem;
+}
+
+
