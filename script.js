@@ -6,6 +6,9 @@ console.log(originalNumber);
 let numberInput = document.getElementById("number")
 let checkBtn = document.getElementById("check-btn")
 let result=document.getElementById("last-div")
+let guessNumberHtml = document.querySelector('#guess-number')
+
+console.log(guessNumberHtml);
 
 //console.log(result)
 
@@ -14,6 +17,8 @@ let result=document.getElementById("last-div")
 
 checkBtn.onclick=function(){
     let value=Number(numberInput.value);
+    guessNumber = guessNumber + 1;
+    guessNumberHtml.textContent = guessNumber;
     guessNumber=guessNumber+value;
     console.log("Butona tiklandi",guessNumber,value)
     result.innerHTML=guessNumber;
@@ -31,6 +36,11 @@ checkBtn.onclick=function(){
         result.innerHTML = "Doğru sayı bildiniz...";
     }
 }
+
+let buton = document.createElement("button");
+buton.innerHTML = "Tıkla"
+
+document.body.appendChild(buton);
 
 function randomInt(min,max){
     return Math.floor(Math.random() * (max - min)) + min;
